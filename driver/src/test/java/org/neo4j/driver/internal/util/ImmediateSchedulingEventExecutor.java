@@ -25,7 +25,6 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 import io.netty.util.concurrent.ProgressivePromise;
 import io.netty.util.concurrent.Promise;
 import io.netty.util.concurrent.ScheduledFuture;
-
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;

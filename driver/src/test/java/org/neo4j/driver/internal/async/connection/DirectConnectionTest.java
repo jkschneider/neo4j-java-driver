@@ -19,7 +19,6 @@
 package org.neo4j.driver.internal.async.connection;
 
 import org.junit.jupiter.api.Test;
-
 import org.neo4j.driver.internal.spi.Connection;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

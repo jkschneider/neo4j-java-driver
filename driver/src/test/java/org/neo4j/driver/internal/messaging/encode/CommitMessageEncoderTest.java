@@ -19,7 +19,6 @@
 package org.neo4j.driver.internal.messaging.encode;
 
 import org.junit.jupiter.api.Test;
-
 import org.neo4j.driver.internal.messaging.ValuePacker;
 import org.neo4j.driver.internal.messaging.request.CommitMessage;
 

@@ -18,15 +18,13 @@
  */
 package org.neo4j.driver.internal.handlers;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.nio.channels.ClosedChannelException;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 import java.util.function.Function;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.Query;
 import org.neo4j.driver.Record;
 import org.neo4j.driver.Value;

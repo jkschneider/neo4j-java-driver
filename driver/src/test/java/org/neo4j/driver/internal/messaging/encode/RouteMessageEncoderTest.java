@@ -18,16 +18,14 @@
  */
 package org.neo4j.driver.internal.messaging.encode;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.InOrder;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.neo4j.driver.Bookmark;
 import org.neo4j.driver.Value;
 import org.neo4j.driver.internal.InternalBookmark;

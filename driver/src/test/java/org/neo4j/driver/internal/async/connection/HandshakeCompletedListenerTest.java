@@ -20,12 +20,10 @@ package org.neo4j.driver.internal.async.connection;
 
 import io.netty.channel.ChannelPromise;
 import io.netty.channel.embedded.EmbeddedChannel;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.util.Collections;
-
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.AuthTokens;
 import org.neo4j.driver.internal.async.inbound.InboundMessageDispatcher;
 import org.neo4j.driver.internal.cluster.RoutingContext;

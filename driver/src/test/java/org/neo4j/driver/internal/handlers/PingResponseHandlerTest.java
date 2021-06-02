@@ -22,7 +22,6 @@ import io.netty.channel.Channel;
 import io.netty.util.concurrent.ImmediateEventExecutor;
 import io.netty.util.concurrent.Promise;
 import org.junit.jupiter.api.Test;
-
 import org.neo4j.driver.Value;
 
 import static java.util.Collections.emptyMap;

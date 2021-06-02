@@ -18,18 +18,16 @@
  */
 package org.neo4j.driver.internal;
 
-import org.hamcrest.MatcherAssert;
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.List;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.internal.util.Iterables;
 import org.neo4j.driver.types.Node;
 import org.neo4j.driver.types.Path;
 import org.neo4j.driver.types.Relationship;
 
 import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.junit.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -79,7 +77,7 @@ class InternalPathTest
         List<Path.Segment> segments = Iterables.asList( path );
 
         // Then
-        MatcherAssert.assertThat( segments, equalTo( Arrays.asList( (Path.Segment)
+        assertThat( segments, equalTo( Arrays.asList( (Path.Segment)
                                 new InternalPath.SelfContainedSegment(
                                         new InternalNode( 1 ),
                                         new InternalRelationship( -1, 1, 2, "KNOWS" ),

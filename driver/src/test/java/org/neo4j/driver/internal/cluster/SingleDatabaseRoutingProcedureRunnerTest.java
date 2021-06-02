@@ -18,16 +18,14 @@
  */
 package org.neo4j.driver.internal.cluster;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
-
 import java.net.URI;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletionStage;
 import java.util.stream.Stream;
-
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.neo4j.driver.AccessMode;
 import org.neo4j.driver.Query;
 import org.neo4j.driver.Record;

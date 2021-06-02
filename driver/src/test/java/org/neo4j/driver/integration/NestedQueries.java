@@ -18,19 +18,16 @@
  */
 package org.neo4j.driver.integration;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.AccessMode;
-import org.neo4j.driver.Record;
-import org.neo4j.driver.Session;
-import org.neo4j.driver.Result;
 import org.neo4j.driver.QueryRunner;
+import org.neo4j.driver.Record;
+import org.neo4j.driver.Result;
+import org.neo4j.driver.Session;
 import org.neo4j.driver.Transaction;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public interface NestedQueries
 {

@@ -18,10 +18,8 @@
  */
 package org.neo4j.driver.internal.handlers;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.concurrent.CompletableFuture;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.internal.async.inbound.InboundMessageDispatcher;
 
 import static java.util.Collections.emptyMap;
@@ -30,7 +28,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
 import static org.neo4j.driver.Values.values;
 
 class ResetResponseHandlerTest

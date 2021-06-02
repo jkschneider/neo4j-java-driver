@@ -20,9 +20,8 @@ package org.neo4j.driver.internal.handlers.pulln;
 
 import java.util.Collections;
 import java.util.function.BiConsumer;
-
-import org.neo4j.driver.Record;
 import org.neo4j.driver.Query;
+import org.neo4j.driver.Record;
 import org.neo4j.driver.internal.BookmarkHolder;
 import org.neo4j.driver.internal.handlers.RunResponseHandler;
 import org.neo4j.driver.internal.handlers.SessionPullResponseCompletionListener;
@@ -31,7 +30,7 @@ import org.neo4j.driver.internal.spi.Connection;
 import org.neo4j.driver.summary.ResultSummary;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;

@@ -19,12 +19,10 @@
 package org.neo4j.driver.internal;
 
 import io.netty.bootstrap.Bootstrap;
-import org.junit.jupiter.api.Test;
-
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.AuthToken;
 import org.neo4j.driver.AuthTokens;
 import org.neo4j.driver.Config;

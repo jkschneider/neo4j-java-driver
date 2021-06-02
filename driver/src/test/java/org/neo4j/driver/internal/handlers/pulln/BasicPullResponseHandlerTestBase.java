@@ -18,14 +18,12 @@
  */
 package org.neo4j.driver.internal.handlers.pulln;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
-
 import java.util.HashMap;
 import java.util.function.BiConsumer;
 import java.util.stream.Stream;
-
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.neo4j.driver.Record;
 import org.neo4j.driver.Value;
 import org.neo4j.driver.internal.BoltServerAddress;
@@ -38,7 +36,7 @@ import org.neo4j.driver.internal.value.BooleanValue;
 import org.neo4j.driver.summary.ResultSummary;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;

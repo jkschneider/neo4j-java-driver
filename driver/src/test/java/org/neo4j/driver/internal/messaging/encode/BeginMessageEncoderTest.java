@@ -18,15 +18,13 @@
  */
 package org.neo4j.driver.internal.messaging.encode;
 
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import org.mockito.InOrder;
-
-import java.time.Duration;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.neo4j.driver.AccessMode;
 import org.neo4j.driver.Bookmark;
 import org.neo4j.driver.Value;

@@ -23,7 +23,6 @@ import io.netty.channel.embedded.EmbeddedChannel;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-
 import org.neo4j.driver.Logger;
 import org.neo4j.driver.Logging;
 

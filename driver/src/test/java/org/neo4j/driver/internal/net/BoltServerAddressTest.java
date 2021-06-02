@@ -18,10 +18,8 @@
  */
 package org.neo4j.driver.internal.net;
 
-import org.junit.jupiter.api.Test;
-
 import java.net.URI;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.internal.BoltServerAddress;
 import org.neo4j.driver.net.ServerAddress;
 

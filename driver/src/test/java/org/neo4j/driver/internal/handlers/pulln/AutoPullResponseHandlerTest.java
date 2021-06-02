@@ -18,15 +18,13 @@
  */
 package org.neo4j.driver.internal.handlers.pulln;
 
-import org.junit.jupiter.api.Test;
-import org.mockito.InOrder;
-import org.mockito.Mockito;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-
+import org.junit.jupiter.api.Test;
+import org.mockito.InOrder;
+import org.mockito.Mockito;
 import org.neo4j.driver.Query;
 import org.neo4j.driver.Value;
 import org.neo4j.driver.internal.handlers.PullAllResponseHandlerTestBase;

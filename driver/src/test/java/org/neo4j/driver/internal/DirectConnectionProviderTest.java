@@ -18,14 +18,12 @@
  */
 package org.neo4j.driver.internal;
 
+import java.util.concurrent.CompletableFuture;
+import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import java.util.concurrent.CompletableFuture;
-import java.util.stream.Stream;
-
 import org.neo4j.driver.AccessMode;
 import org.neo4j.driver.internal.async.connection.DirectConnection;
 import org.neo4j.driver.internal.spi.Connection;

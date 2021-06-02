@@ -20,12 +20,10 @@ package org.neo4j.driver.internal.util.messaging;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import org.junit.jupiter.api.DynamicNode;
-import org.junit.jupiter.api.TestFactory;
-
 import java.io.IOException;
 import java.util.stream.Stream;
-
+import org.junit.jupiter.api.DynamicNode;
+import org.junit.jupiter.api.TestFactory;
 import org.neo4j.driver.internal.async.inbound.ByteBufInput;
 import org.neo4j.driver.internal.messaging.Message;
 import org.neo4j.driver.internal.messaging.MessageFormat;

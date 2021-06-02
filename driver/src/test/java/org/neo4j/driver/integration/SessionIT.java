@@ -18,11 +18,6 @@
  */
 package org.neo4j.driver.integration;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.RegisterExtension;
-import reactor.test.StepVerifier;
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -35,18 +30,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import org.neo4j.driver.AccessMode;
-import org.neo4j.driver.AuthToken;
-import org.neo4j.driver.Config;
-import org.neo4j.driver.Driver;
-import org.neo4j.driver.GraphDatabase;
-import org.neo4j.driver.QueryRunner;
-import org.neo4j.driver.Record;
-import org.neo4j.driver.Result;
-import org.neo4j.driver.Session;
-import org.neo4j.driver.Transaction;
-import org.neo4j.driver.TransactionWork;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.RegisterExtension;
+import org.neo4j.driver.*;
 import org.neo4j.driver.exceptions.AuthenticationException;
 import org.neo4j.driver.exceptions.ClientException;
 import org.neo4j.driver.exceptions.ResultConsumedException;
@@ -66,6 +53,7 @@ import org.neo4j.driver.summary.ResultSummary;
 import org.neo4j.driver.util.DatabaseExtension;
 import org.neo4j.driver.util.ParallelizableIT;
 import org.neo4j.driver.util.TestUtil;
+import reactor.test.StepVerifier;
 
 import static java.util.Collections.emptyList;
 import static org.hamcrest.CoreMatchers.containsString;

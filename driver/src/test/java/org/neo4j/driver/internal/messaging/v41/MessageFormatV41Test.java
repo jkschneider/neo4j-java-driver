@@ -19,10 +19,8 @@
 package org.neo4j.driver.internal.messaging.v41;
 
 import org.junit.jupiter.api.Test;
-
 import org.neo4j.driver.internal.messaging.MessageFormat;
 import org.neo4j.driver.internal.messaging.common.CommonMessageReader;
-import org.neo4j.driver.internal.messaging.v3.BoltProtocolV3;
 import org.neo4j.driver.internal.messaging.v4.MessageWriterV4;
 import org.neo4j.driver.internal.packstream.PackInput;
 import org.neo4j.driver.internal.packstream.PackOutput;

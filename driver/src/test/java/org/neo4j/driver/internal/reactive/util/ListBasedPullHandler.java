@@ -20,8 +20,9 @@ package org.neo4j.driver.internal.reactive.util;
 
 import java.util.List;
 import java.util.Map;
-
 import org.neo4j.driver.Query;
+import org.neo4j.driver.Record;
+import org.neo4j.driver.Value;
 import org.neo4j.driver.internal.handlers.PullResponseCompletionListener;
 import org.neo4j.driver.internal.handlers.RunResponseHandler;
 import org.neo4j.driver.internal.handlers.pulln.BasicPullResponseHandler;
@@ -29,8 +30,6 @@ import org.neo4j.driver.internal.spi.Connection;
 import org.neo4j.driver.internal.util.MetadataExtractor;
 import org.neo4j.driver.internal.util.QueryKeys;
 import org.neo4j.driver.internal.value.BooleanValue;
-import org.neo4j.driver.Record;
-import org.neo4j.driver.Value;
 import org.neo4j.driver.summary.ResultSummary;
 
 import static java.util.Collections.emptyList;

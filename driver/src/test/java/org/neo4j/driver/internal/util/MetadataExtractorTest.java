@@ -18,13 +18,11 @@
  */
 package org.neo4j.driver.internal.util;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.Bookmark;
 import org.neo4j.driver.Query;
 import org.neo4j.driver.Value;

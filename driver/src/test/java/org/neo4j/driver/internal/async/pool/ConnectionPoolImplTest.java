@@ -20,12 +20,10 @@ package org.neo4j.driver.internal.async.pool;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
-import org.junit.jupiter.api.Test;
-import org.mockito.ArgumentCaptor;
-
 import java.util.HashSet;
 import java.util.concurrent.ExecutionException;
-
+import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
 import org.neo4j.driver.internal.BoltServerAddress;
 import org.neo4j.driver.internal.util.FakeClock;
 

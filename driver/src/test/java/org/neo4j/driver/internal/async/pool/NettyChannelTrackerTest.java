@@ -23,7 +23,6 @@ import io.netty.channel.embedded.EmbeddedChannel;
 import io.netty.channel.group.ChannelGroup;
 import org.bouncycastle.util.Arrays;
 import org.junit.jupiter.api.Test;
-
 import org.neo4j.driver.internal.BoltServerAddress;
 import org.neo4j.driver.internal.async.inbound.InboundMessageDispatcher;
 import org.neo4j.driver.internal.messaging.request.GoodbyeMessage;

@@ -18,25 +18,23 @@
  */
 package org.neo4j.driver;
 
+import java.io.File;
+import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import java.io.File;
-import java.util.concurrent.TimeUnit;
-
 import org.neo4j.driver.net.ServerAddressResolver;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
-import static org.neo4j.driver.internal.RevocationStrategy.STRICT;
 import static org.neo4j.driver.internal.RevocationStrategy.NO_CHECKS;
+import static org.neo4j.driver.internal.RevocationStrategy.STRICT;
 import static org.neo4j.driver.internal.RevocationStrategy.VERIFY_IF_PRESENT;
 import static org.neo4j.driver.internal.handlers.pulln.FetchSizeUtil.DEFAULT_FETCH_SIZE;
 

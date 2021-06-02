@@ -18,39 +18,37 @@
  */
 package org.neo4j.driver.internal.reactive;
 
-import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.test.StepVerifier;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionException;
-
+import org.junit.jupiter.api.Test;
+import org.neo4j.driver.Record;
 import org.neo4j.driver.internal.InternalRecord;
+import org.neo4j.driver.internal.cursor.RxResultCursor;
 import org.neo4j.driver.internal.cursor.RxResultCursorImpl;
 import org.neo4j.driver.internal.handlers.RunResponseHandler;
 import org.neo4j.driver.internal.handlers.pulln.PullResponseHandler;
+import org.neo4j.driver.internal.reactive.util.ListBasedPullHandler;
 import org.neo4j.driver.internal.util.Futures;
 import org.neo4j.driver.reactive.RxResult;
-import org.neo4j.driver.internal.reactive.util.ListBasedPullHandler;
-import org.neo4j.driver.internal.cursor.RxResultCursor;
-import org.neo4j.driver.Record;
 import org.neo4j.driver.summary.ResultSummary;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
 
 import static java.util.Arrays.asList;
 import static java.util.concurrent.CompletableFuture.completedFuture;
 import static java.util.function.Predicate.isEqual;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.neo4j.driver.internal.util.Futures.failedFuture;
 import static org.neo4j.driver.Values.values;
+import static org.neo4j.driver.internal.util.Futures.failedFuture;
 
 class InternalRxResultTest
 {

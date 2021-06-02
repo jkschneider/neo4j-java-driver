@@ -20,8 +20,6 @@ package org.neo4j.driver.internal.cluster.loadbalancing;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.util.concurrent.GlobalEventExecutor;
-import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,7 +35,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.Bookmark;
 import org.neo4j.driver.Logging;
 import org.neo4j.driver.exceptions.FatalDiscoveryException;

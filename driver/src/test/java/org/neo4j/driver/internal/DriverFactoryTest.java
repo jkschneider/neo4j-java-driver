@@ -20,13 +20,11 @@ package org.neo4j.driver.internal;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.util.concurrent.EventExecutorGroup;
+import java.net.URI;
+import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-
-import java.net.URI;
-import java.util.stream.Stream;
-
 import org.neo4j.driver.AuthToken;
 import org.neo4j.driver.AuthTokens;
 import org.neo4j.driver.Config;

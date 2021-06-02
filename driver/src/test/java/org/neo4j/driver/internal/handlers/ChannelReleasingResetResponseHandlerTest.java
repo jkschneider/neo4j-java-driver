@@ -19,13 +19,9 @@
 package org.neo4j.driver.internal.handlers;
 
 import io.netty.channel.embedded.EmbeddedChannel;
-import io.netty.util.concurrent.Future;
-import io.netty.util.concurrent.ImmediateEventExecutor;
+import java.util.concurrent.CompletableFuture;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.concurrent.CompletableFuture;
-
 import org.neo4j.driver.internal.async.inbound.InboundMessageDispatcher;
 import org.neo4j.driver.internal.async.pool.ExtendedChannelPool;
 import org.neo4j.driver.internal.util.Clock;

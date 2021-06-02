@@ -18,16 +18,14 @@
  */
 package org.neo4j.driver.internal.messaging.encode;
 
-import org.junit.jupiter.api.Test;
-import org.mockito.InOrder;
-
 import java.util.HashMap;
 import java.util.Map;
-
+import org.junit.jupiter.api.Test;
+import org.mockito.InOrder;
+import org.neo4j.driver.Value;
 import org.neo4j.driver.internal.messaging.ValuePacker;
 import org.neo4j.driver.internal.messaging.request.PullAllMessage;
 import org.neo4j.driver.internal.messaging.request.PullMessage;
-import org.neo4j.driver.Value;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.inOrder;

@@ -19,7 +19,6 @@
 package org.neo4j.driver.integration;
 
 import io.netty.channel.Channel;
-import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 

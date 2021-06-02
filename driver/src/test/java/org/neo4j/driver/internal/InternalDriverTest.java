@@ -18,10 +18,8 @@
  */
 package org.neo4j.driver.internal;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.concurrent.CompletableFuture;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.Config;
 import org.neo4j.driver.Metrics;
 import org.neo4j.driver.exceptions.ClientException;
@@ -31,10 +29,10 @@ import org.neo4j.driver.internal.metrics.MetricsProvider;
 import org.neo4j.driver.internal.security.SecurityPlanImpl;
 import org.neo4j.driver.internal.util.Clock;
 
-import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;

@@ -20,15 +20,13 @@ package org.neo4j.driver.internal.async.inbound;
 
 import io.netty.channel.embedded.EmbeddedChannel;
 import io.netty.handler.codec.DecoderException;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.neo4j.driver.Value;
 import org.neo4j.driver.exceptions.Neo4jException;
 import org.neo4j.driver.internal.async.connection.ChannelAttributes;

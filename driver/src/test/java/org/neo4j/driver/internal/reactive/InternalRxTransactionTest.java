@@ -18,18 +18,14 @@
  */
 package org.neo4j.driver.internal.reactive;
 
-import org.junit.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.neo4j.driver.Query;
-import org.reactivestreams.Publisher;
-import reactor.test.StepVerifier;
-
 import java.util.concurrent.CompletionException;
 import java.util.concurrent.CompletionStage;
 import java.util.function.Function;
 import java.util.stream.Stream;
-
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.neo4j.driver.Query;
 import org.neo4j.driver.Value;
 import org.neo4j.driver.internal.InternalRecord;
 import org.neo4j.driver.internal.async.UnmanagedTransaction;
@@ -39,12 +35,14 @@ import org.neo4j.driver.internal.util.Futures;
 import org.neo4j.driver.internal.value.IntegerValue;
 import org.neo4j.driver.reactive.RxResult;
 import org.neo4j.driver.reactive.RxTransaction;
+import org.reactivestreams.Publisher;
+import reactor.test.StepVerifier;
 
 import static java.util.Collections.singletonList;
 import static java.util.Collections.singletonMap;
 import static java.util.concurrent.CompletableFuture.completedFuture;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;

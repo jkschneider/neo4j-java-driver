@@ -18,13 +18,11 @@
  */
 package org.neo4j.driver;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.URI;
 import java.util.List;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.exceptions.ServiceUnavailableException;
 import org.neo4j.driver.util.StubServer;
 import org.neo4j.driver.util.TestUtil;

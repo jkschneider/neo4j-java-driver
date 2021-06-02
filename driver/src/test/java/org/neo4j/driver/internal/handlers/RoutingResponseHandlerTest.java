@@ -18,18 +18,16 @@
  */
 package org.neo4j.driver.internal.handlers;
 
+import java.util.concurrent.CompletionException;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-
-import java.util.concurrent.CompletionException;
-
-import org.neo4j.driver.internal.RoutingErrorHandler;
-import org.neo4j.driver.internal.spi.ResponseHandler;
 import org.neo4j.driver.AccessMode;
 import org.neo4j.driver.exceptions.ClientException;
 import org.neo4j.driver.exceptions.ServiceUnavailableException;
 import org.neo4j.driver.exceptions.SessionExpiredException;
 import org.neo4j.driver.exceptions.TransientException;
+import org.neo4j.driver.internal.RoutingErrorHandler;
+import org.neo4j.driver.internal.spi.ResponseHandler;
 
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.junit.MatcherAssert.assertThat;

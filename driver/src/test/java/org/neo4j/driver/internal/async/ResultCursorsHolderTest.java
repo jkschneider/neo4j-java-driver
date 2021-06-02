@@ -18,13 +18,11 @@
  */
 package org.neo4j.driver.internal.async;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.TimeoutException;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.internal.cursor.AsyncResultCursorImpl;
 import org.neo4j.driver.internal.util.Futures;
 

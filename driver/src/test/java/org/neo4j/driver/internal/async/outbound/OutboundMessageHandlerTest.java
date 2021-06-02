@@ -20,14 +20,12 @@ package org.neo4j.driver.internal.async.outbound;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.embedded.EmbeddedChannel;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.Query;
 import org.neo4j.driver.Value;
 import org.neo4j.driver.Values;
@@ -46,7 +44,6 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.neo4j.driver.Values.value;
 import static org.neo4j.driver.internal.logging.DevNullLogging.DEV_NULL_LOGGING;
-import static org.neo4j.driver.internal.messaging.MessageFormat.Writer;
 import static org.neo4j.driver.internal.messaging.request.PullAllMessage.PULL_ALL;
 import static org.neo4j.driver.util.TestUtil.assertByteBufContains;
 

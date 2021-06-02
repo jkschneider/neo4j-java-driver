@@ -20,20 +20,18 @@ package org.neo4j.driver.internal.async.connection;
 
 import io.netty.channel.embedded.EmbeddedChannel;
 import io.netty.handler.ssl.SslHandler;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Test;
-
 import java.security.GeneralSecurityException;
 import java.util.List;
 import javax.net.ssl.SNIHostName;
 import javax.net.ssl.SNIServerName;
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.SSLParameters;
-
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.internal.BoltServerAddress;
 import org.neo4j.driver.internal.RevocationStrategy;
-import org.neo4j.driver.internal.security.SecurityPlanImpl;
 import org.neo4j.driver.internal.security.SecurityPlan;
+import org.neo4j.driver.internal.security.SecurityPlanImpl;
 import org.neo4j.driver.internal.util.Clock;
 import org.neo4j.driver.internal.util.FakeClock;
 

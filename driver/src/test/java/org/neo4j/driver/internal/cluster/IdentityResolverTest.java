@@ -18,10 +18,8 @@
  */
 package org.neo4j.driver.internal.cluster;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Set;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.net.ServerAddress;
 
 import static org.hamcrest.Matchers.equalTo;

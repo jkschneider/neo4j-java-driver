@@ -18,11 +18,9 @@
  */
 package org.neo4j.driver.internal.cluster;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.List;
 import java.util.concurrent.CompletionStage;
-
+import org.junit.jupiter.api.Test;
 import org.neo4j.driver.Record;
 import org.neo4j.driver.exceptions.ClientException;
 import org.neo4j.driver.internal.spi.Connection;

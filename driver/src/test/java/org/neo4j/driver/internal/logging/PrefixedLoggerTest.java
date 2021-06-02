@@ -19,7 +19,6 @@
 package org.neo4j.driver.internal.logging;
 
 import org.junit.jupiter.api.Test;
-
 import org.neo4j.driver.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;

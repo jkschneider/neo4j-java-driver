@@ -18,12 +18,10 @@
  */
 package org.neo4j.driver.internal.async;
 
+import java.lang.reflect.Method;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 import org.mockito.ArgumentCaptor;
-
-import java.lang.reflect.Method;
-
 import org.neo4j.driver.Logger;
 import org.neo4j.driver.Logging;
 import org.neo4j.driver.TransactionConfig;
